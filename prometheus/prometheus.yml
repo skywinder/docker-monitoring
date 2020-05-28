@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 5s
+  external_labels:
+    monitor: 'devopsage-monitor'
+scrape_configs:
+  - job_name: 'prometheus' 
+    static_configs:
+       - targets: ['localhost:9090'] ## IP Address of the localhostj
+#       - targets: ['104.248.148.69:9090'] ## IP Address of the localhostj
